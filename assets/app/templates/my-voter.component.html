@@ -1,0 +1,7 @@
+<h1> This is my voter component for {{name}}</h1>
+<button (click)="vote(true)"
+[disabled]="voted">Agree</button>
+<button (click)="vote(false)"
+[disabled]="voted">Disagree</button>
+<span *ngIf="voted">I already voted</span>
+
