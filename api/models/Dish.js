@@ -6,16 +6,30 @@
  */
 
 module.exports = {
-
+  seedData: [
+    {
+      name: 'Tra Dao',
+      price: '35',
+      materials: [
+        { id: 1 },
+        { id: 2 },
+        { id: 3 }
+      ]
+    }
+  ],
   attributes: {
     name: {
       type: 'string'
     },
     price: {
-      type: 'int'
+      type: 'float'
     },
     parent: {
       model: 'Dish'
+    },
+    materials: {
+      collection: 'material',
+      via: 'dishes'
     }
   }
 };
