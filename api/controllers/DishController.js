@@ -6,12 +6,22 @@
  */
 
 module.exports = {
-	dishFullDetail: function(req, res) {
+    dishesFullDetail: function (req, res) {
         Dish.find()
-        .populate('dishMaterials.material')
-        .exec(function(err, data) {
-            res.json(data);
-        });
+            .populate('dishMaterials.material')
+            .exec(function (err, data) {
+                res.json(data);
+            });
+    }
+
+    , dishFullDetail: function (req, res) {
+        var dishId = req.params['id']; 
+
+        Dish.findOne({id: dishId})
+            .populate('dishMaterials.material')
+            .exec(function (err, data) {
+                res.json(data);
+            });
     }
 };
 
