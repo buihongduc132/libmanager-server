@@ -10,10 +10,73 @@ module.exports = {
     {
       name: 'Tra Dao',
       price: '35',
-      materials: [
-        { id: 1 },
-        { id: 2 },
-        { id: 3 }
+      dishMaterials: [
+        {
+          material: {
+            id: 1
+          },
+          amount: 20
+        },
+        {
+          material: {
+            id: 2
+          },
+          amount: 30
+        },
+        {
+          material: {
+            id: 3
+          },
+          amount: 50
+        }
+      ]
+    },
+    {
+      name: 'Tra Sua',
+      price: '40',
+      dishMaterials: [
+        {
+          material: {
+            id: 1
+          },
+          amount: 20
+        },
+        {
+          material: {
+            id: 2
+          },
+          amount: 30
+        },
+        {
+          material: {
+            id: 3
+          },
+          amount: 50
+        }
+      ]
+    },
+    {
+      name: 'Tra Chanh',
+      price: '50',
+      dishMaterials: [
+        {
+          material: {
+            id: 1
+          },
+          amount: 20
+        },
+        {
+          material: {
+            id: 2
+          },
+          amount: 30
+        },
+        {
+          material: {
+            id: 3
+          },
+          amount: 50
+        }
       ]
     }
   ],
@@ -27,9 +90,9 @@ module.exports = {
     parent: {
       model: 'Dish'
     },
-    materials: {
-      collection: 'material',
-      via: 'dishes'
+    dishMaterials: {
+      collection: 'DishMaterial',
+      via: 'dish'
     }
   }
 };

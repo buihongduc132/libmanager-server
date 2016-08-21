@@ -43,4 +43,5 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  'get /dishFullDetail': 'DishController.dishFullDetail'
 };

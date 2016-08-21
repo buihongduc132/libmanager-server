@@ -11,21 +11,21 @@ module.exports = {
       id: 1,
       name: 'Mut Dao',
       price: '98',
-      amount: '1000',
+      containerAmount: '1000',
       unit: 'ml'
     },
     {
       id: 2,
       name: 'Yogurt',
       price: '6.5',
-      amount: '1',
+      containerAmount: '1',
       unit: 'hop'
     },
     {
       id: 3,
       name: 'Black Tea',
       price: '1500',
-      amount: '1000',
+      containerAmount: '1000',
       unit: 'g'
     }
   ],
@@ -36,16 +36,11 @@ module.exports = {
     price: {
       type: 'float'
     },
-    amount: {
+    containerAmount: {
       type: 'float'
     },
     unit: {
       type: 'string'
-    },
-    dishes: {
-      collection: 'Dish',
-      via: 'materials',
-      dominant: true
     }
   }
 };
