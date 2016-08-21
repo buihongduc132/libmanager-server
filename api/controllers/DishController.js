@@ -12,26 +12,6 @@ module.exports = {
         .exec(function(err, data) {
             res.json(data);
         });
-        // Dish.find()
-        // .populate('dishMaterials')
-        // .then(function(dishes) {
-        //     DishMaterial.find()
-        //     .then(function(dishMaterials) {
-
-        //     });
-
-        //     console.log(dishes);
-
-        //     return dishes;
-        // })
-        // .then(function(dishes) {
-        //     res.json(dishes);
-        // })
-        // .fail(function(err) {
-        //     console.log(err);
-
-        //     res.json(err);
-        // })
     }
 };
 
