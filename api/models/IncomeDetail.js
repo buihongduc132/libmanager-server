@@ -1,5 +1,5 @@
 /**
- * DateIncomeDetail.js
+ * IncomeDetail.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
@@ -13,7 +13,7 @@ module.exports = {
       },
       discount: 0,
       price: 30,
-      DateIncome: {
+      Income: {
         id: 1
       }
     },
@@ -23,7 +23,7 @@ module.exports = {
       },
       discount: 0,
       price: 35,
-      DateIncome: {
+      Income: {
         id: 1
       }
     },
@@ -33,7 +33,7 @@ module.exports = {
       },
       discount: 0,
       price: 25,
-      DateIncome: {
+      IncomeDaily: {
         id: 1
       }
     }
@@ -48,8 +48,8 @@ module.exports = {
     price: {
       type: 'float'
     },
-    DateIncome: {
-      model: 'DateIncome'
+    Income: {
+      model: 'Income'
     }
   }
 };

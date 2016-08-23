@@ -43,9 +43,9 @@ module.exports = {
     payor: {
       model: 'person'
     },
-    DateIncomeDetails: {
-      collection: 'DateIncomeDetail',
-      via: 'DateIncome'
+    IncomeDetails: {
+      collection: 'IncomeDetail',
+      via: 'Income'
     }
   }
 };

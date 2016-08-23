@@ -45,5 +45,5 @@ module.exports.routes = {
 
   'get /dishFullDetail': 'DishController.dishesFullDetail'
   , 'get /dishFullDetail/:id': 'DishController.dishFullDetail'
-  , 'get /dateIncomeFullDetail': 'DateIncomeController.dateIncomeFull' 
+  , 'get /incomeFullDetail': 'IncomeController.incomeFullDetail' 
 };
