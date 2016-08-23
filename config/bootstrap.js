@@ -14,7 +14,10 @@ module.exports.bootstrap = function(cb) {
     PersonType.seed,
     Material.seed,
     Dish.seed,
-    DishMaterial.seed
+    DishMaterial.seed,
+    Person.seed,
+    DateIncome.seed,
+    DateIncomeDetail.seed
   ], cb);
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)

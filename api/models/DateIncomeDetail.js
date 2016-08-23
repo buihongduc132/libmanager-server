@@ -6,15 +6,46 @@
  */
 
 module.exports = {
-
+  seedData: [
+    {
+      Dish: {
+        id: 1
+      },
+      discount: 0,
+      price: 30,
+      DateIncome: {
+        id: 1
+      }
+    },
+    {
+      Dish: {
+        id: 2
+      },
+      discount: 0,
+      price: 35,
+      DateIncome: {
+        id: 1
+      }
+    },
+    {
+      Dish: {
+        id: 3
+      },
+      discount: 0,
+      price: 25,
+      DateIncome: {
+        id: 1
+      }
+    }
+  ],
   attributes: {
     Dish: {
       model: 'Dish'
     },
-    Amount: {
-      type: 'integer'
+    discount: {
+      type: 'float'
     },
-    Discount: {
+    price: {
       type: 'float'
     },
     DateIncome: {

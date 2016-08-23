@@ -6,7 +6,14 @@
  */
 
 module.exports = {
-
+  seedData: [
+    {
+      name: 'Duc',
+      type: {
+        id: 1
+      }
+    }
+  ],
   attributes: {
     name: {
       type: 'string'
