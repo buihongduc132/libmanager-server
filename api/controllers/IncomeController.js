@@ -19,6 +19,6 @@ module.exports = {
 
                 return res.json(incomes);
             });
-    }
+    },
 };
 

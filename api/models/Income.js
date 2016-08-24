@@ -15,6 +15,9 @@ module.exports = {
       dayActual: 1,
       monthActual: 7,
       yearActual: 2016,
+      total: 200,
+      time: '2016-07-01l',
+      isDeleted: false,
       payor: {
         id: 1
       }
@@ -42,6 +45,15 @@ module.exports = {
     },
     payor: {
       model: 'person'
+    },
+    time: {
+      type: 'date'
+    },
+    total: {
+      type: 'float'
+    },
+    isDeleted: {
+      type: 'boolean'
     },
     IncomeDetails: {
       collection: 'IncomeDetail',
