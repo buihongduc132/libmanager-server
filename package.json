@@ -29,7 +29,7 @@
     "sails-hook-blueprints-offshore": "0.0.1",
     "sails-hook-orm-offshore": "0.0.3",
     "sails-mysql": "^0.11.5",
-    "systemjs": "0.19.27",
+    "systemjs": "0.21.6",
     "zone.js": "^0.6.12"
   },
   "scripts": {
